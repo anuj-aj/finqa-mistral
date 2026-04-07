@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  finqa-api:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - ${MODELS_DIR}:/models
+      - ${DATA_DIR}:/data
+    env_file:
+      - .env
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

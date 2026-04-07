@@ -1,0 +1,34 @@
+# Model weights
+models/
+
+# Data
+data/
+
+# Logs
+logs/
+
+# MLflow
+mlflow.db
+mlruns/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Env
+.env
+
+# Conda
+*.conda
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
